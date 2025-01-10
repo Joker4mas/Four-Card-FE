@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Snap-1.png)
+![](./images/Snap-x.png)
 
 ### Links
 
