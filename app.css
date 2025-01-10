@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     color: var(--GrayishBlue) !important;
-    margin: .3rem auto;
+    margin: 1rem auto;
 }
 
 .headerText span {
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 55%;
     display: flex;
     text-align: center;
-    margin: .2rem auto;
+    margin: 1rem auto;
     color: var(--GrayishBlue);
 }
 
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.5rem !important;
     justify-items: center;
     align-items: center;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 .grid__item {
