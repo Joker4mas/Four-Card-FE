@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Neutral color */
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+.container {
+    background-color: var(--veryLightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText {
+    display: grid;
+    font-size: 2em;
+    text-wrap: wrap;
+    font-weight: inherit;
+    justify-content: center;
+    align-items: center;
+    color: var(--GrayishBlue) !important;
+    margin: .3rem auto;
+}
+
+.headerText span {
+    font-weight: bold;
+    color: var(--VeryDarkBlue);
+}
+
+.sumText {
+    width: 55%;
+    display: flex;
+    text-align: center;
+    margin: .2rem auto;
+    color: var(--GrayishBlue);
+}
+
+.grid__flex {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem !important;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.grid__item {
+    display: grid;
+    gap: .6rem !important;
+    border-radius: 10px;
+    background-color: var(--VeryLightGray);
+    padding: 1.5rem !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid__item p {
+    color: var(--GrayishBlue);
+    font-size: small;
+    /* margin-bottom: 1rem 0; */
+}
+
+.grid__item span {
+    font-size: 1.2em;
+    font-weight: bold !important;
+    text-align: start;
+}
+
+.grid__item img {
+    place-self: end;
+    margin: 1rem 0;
+}
+
+
+
+
+.supervisor {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    place-self: center center;
+    border-top: .3rem solid var(--Cyan);
+}
+
+.team {
+    border-top: .3rem solid var(--Red);
+
+}
+
+.karma {
+
+    border-top: .3rem solid var(--Orange);
+}
+
+.cal {
+    grid-column: 3 / 4;
+    grid-row: 1/3;
+    border-top: .3rem solid var(--Blue);
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 428px) {
+
+    .headerText {
+        font-size: 1.5em;
+        margin: 1rem auto;
+    }
+
+    .sumText {
+        width: 90%;
+        font-size: small;
+    }
+
+    .grid__flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .supervisor {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .team {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .karma {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .cal {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
